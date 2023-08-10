@@ -1,0 +1,11 @@
+[Unit]
+Description=Better Cron
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bc/bc launch
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
